@@ -1,0 +1,274 @@
+/* custom.css */
+
+/* Color Palette:
+   - cb997e (Brownish)
+   - eddcd2 (Light Beige)
+   - fff1e6 (Very Light Beige)
+   - f0efeb (Soft Gray)
+   - ddbea9 (Soft Brown)
+   - a5a58d (Muted Olive)
+   - b7b7a4 (Light Gray)
+*/
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto for better readability */
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff1e6; /* Very Light Beige */
+}
+
+header {
+    background: #cb997e; /* Brownish */
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar-brand {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header .navbar {
+    padding: 10px;
+}
+
+.navbar {
+    padding: 15px; /* Increase padding for better spacing */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pushes the nav items to the right */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Add space between nav items */
+}
+
+.nav-link {
+    color: #fff; /* Ensure the text color is white for visibility */
+    font-size: 1.1em; /* Slightly increase font size for better readability */
+}
+
+.nav-link:hover {
+    color: #a5a58d; /* Change color on hover for better visibility */
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Brownish */
+}
+
+#about p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#experience .card {
+    margin-bottom: 15px; /* Space between cards */
+}
+
+#experience .card-header {
+
+    background-color: #cb997e; /* Brownish color for header */
+    color: #fff; /* White text for better contrast */
+}
+
+#experience .card-body {
+    font-size: 1em; /* Font size for the description */
+    color: #333; /* Darker text for better readability */
+}
+
+#projects .row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space out items evenly */
+}
+
+.project, 
+.card {
+    flex: 1 1 30%; /* Allow items to grow and shrink, with a base width of 30% */
+    margin: 10px; /* Add margin for spacing */
+    min-height: 300px; /* Set a minimum height for consistency */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out children */
+}
+
+
+#projects .project {
+    background: #eddcd2; /* Light Beige */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#projects .project img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    align-content: center;
+}
+
+#projects .project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #cb997e; /* Darker color for better contrast */
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    background: #ddbea9; /* Soft Brown */
+    color: #333;
+    border-radius: 5px;
+}
+
+.contact-icon {
+    font-size: 1.5em; /* Size of the icons */
+    color: #cb997e; /* Brownish color */
+    margin: 0 15px; /* Space between icons */
+    transition: color 0.3s; /* Smooth color transition on hover */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-icon:hover {
+    color: #a5a58d; /* Muted Olive on hover */
+}
+
+#contact p {
+    font-size: 0.8em; /* Font size for contact text */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+/* New styles for Testimonials section */
+#testimonials {
+    background: #f0efeb; /* Soft Gray */
+}
+
+#testimonials blockquote {
+    border-left: 5px solid #cb997e; /* Brownish */
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1em;
+    font-style: italic;
+    color: #333; /* Darker text for better readability */
+}
+
+#testimonials blockquote footer {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+blockquote cite {
+    color: #555; /* Dark grey color for better visibility */
+    font-size: 1.2em;
+    /*font-style: normal; /* Optional: Remove italic style for better readability */
+}
+/* New styles for Blog section */
+#blog {
+    background: #fff; /* White background for blog section */
+}
+
+#blog h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #cb997e; /* Brownish */
+}
+
+#blog .btn {
+    margin-top: 10px;
+    background-color: #cb997e; /* Brownish */
+    color: #fff;
+}
+
+#blog .btn:hover {
+    background-color: #a5a58d; /* Muted Olive */
+}
+
+/* Certifications Section */
+#certifications {
+    background: #fff; /* White background for certifications section */
+}
+
+#certifications .row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Space out items evenly */
+}
+
+#certifications .card {
+    flex: 1 1 30%;
+    margin: 10px; /* Add margin for spacing */
+    min-height: 150px;
+    height: 100%; /* Ensure consistent card height */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Space out card content */
+    /*max-width: 300px; /* Optional: Define a max width for cards */
+}
+
+#certifications h5 {
+    font-size: 1.5em; 
+    margin-bottom: 10px; 
+    color: #cb997e; /* Brownish */
+}
+
+#certifications .btn {
+    margin-top: auto; /* Push the button to the bottom */
+    background-color: #cb997e; /* Brownish */
+    color: #fff;
+    font-size: 0.9em; /* Adjust font size for better readability */
+    padding: 10px 20px; /* Increase padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#certifications .btn:hover {
+    background-color: #a5a58d; /* Muted Olive */
+}
+
+#certifications .certifications:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    margin-bottom: 20px; /* Add space between text and button */
+}
+
+.container .row > div {
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
