@@ -50,6 +50,9 @@ header .navbar {
     margin: 0 15px; /* Add space between nav items */
 }
 
+.nav-item .a{
+    color:#333
+}
 .nav-link {
     color: #fff; /* Ensure the text color is white for visibility */
     font-size: 1.1em; /* Slightly increase font size for better readability */
@@ -71,10 +74,11 @@ header .navbar {
 }
 
 #about p {
+    color: #333333;
     text-align: center;
     font-size: 1.2em;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: auto;
 }
 
 #experience .card {
@@ -89,7 +93,15 @@ header .navbar {
 
 #experience .card-body {
     font-size: 1em; /* Font size for the description */
-    color: #333; /* Darker text for better readability */
+    color: #333333; /* Darker text for better readability */
+}
+
+#experience  p {
+    color: #333333;
+}
+
+#experience li {
+    color: #333333;
 }
 
 #projects .row {
@@ -97,6 +109,8 @@ header .navbar {
     flex-wrap: wrap; /* Allow wrapping of items */
     justify-content: space-between; /* Space out items evenly */
 }
+
+
 
 .project, 
 .card {
@@ -136,7 +150,10 @@ header .navbar {
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    color: #cb997e; /* Darker color for better contrast */
+    color: #333333; /* Darker color for better contrast */
+}
+#projects .project p {
+ color: #333333;
 }
 
 #skills ul {
@@ -259,7 +276,7 @@ blockquote cite {
     background-color: #a5a58d; /* Muted Olive */
 }
 
-#certifications .certifications:hover {
+#certifications .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
